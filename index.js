@@ -1,3 +1,3 @@
-/**
- * Created by admin on 2016-08-07.
- */
+angular.module('app',[]).controller('app', function($scope){
+    $scope.test = 'Oliver'
+});
