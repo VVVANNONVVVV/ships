@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Ships</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body ng-app="app" ng-controller="app">
     <h1>Hello {{test}}</h1>
-    <table>
+    <table class="scratch" ng-class="{'show-result': showResult}">
         <tr>
-        <td>none</td>
-        <td>none</td>
+        <td class="scratch__field" ng-click="checkResult()">
+            <span class="hidden">
+                You {{scratch[0]}}
+            </span>
+        </td>
+        <td class="scratch__field" ng-click="checkResult()">
+            <span class="hidden">
+                You {{scratch[1]}}
+            </span></td>
         </tr> <tr>
-        <td>none</td>
-        <td>none</td>
+        <td class="scratch__field" ng-click="checkResult()">
+            <span class="hidden">
+                You {{scratch[2]}}
+            </span>
+        </td>
+        <td class="scratch__field" ng-click="checkResult()">
+            <span class="hidden">
+                You {{scratch[3]}}
+            </span>
+        </td>
         </tr>
     </table>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
